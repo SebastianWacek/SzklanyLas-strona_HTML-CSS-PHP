@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with-device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Personalizowane lasy w szkle na różne okazje</title>
+</head>
+<body>
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img src="Image/logo.png" alt="logo"></a>
+            <div class="nav-links">
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">O nas</a></li>
+                <li><a href="#">Oferta</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+
+        </nav>
+        <div class="text-box"> 
+            <h1>Skontaktuj się ze mną</h1>
+            <p>Wypełnij poniższy formularz, stwórzmy razem Twój wymarzony las w słoiku <a class="fa fa-heart"></a></p>
+        </div>
+    </section>
+
+
+<section class="contact-title">
+<h1>Formularz kontaktowy</h1>
+<p>Opisz swój pomysł na las, a ja przedstawię Ci wycenę oraz czas realizacji</p>
+</section>
+<section class="row">
+    <h2>s</h2>
+<div class="col-contact">
+    <div>
+        <i class="fa fa-home"></i>
+        <span>
+            Kielce, Krosno, Brzozów
+        </span>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i>
+        <span>
+            123456789
+        </span>
+    </div>
+    <div>
+        <i class="fa fa-envelope"></i>
+        <span>
+            xyssaxddfs@gmail.com
+        </span>
+    </div>
+</div>
+<div class="col-contact">
+    <form action="form-handler.php" method="post">
+         <input type="text" name="name" id="name" placeholder="Wpisz swoje imię"> <br>
+         <input type="email" name="email" id="email" placeholder="Wpisz swój adres e-mail"> <br>
+         <input type="number" name="number" id="number" placeholder="Wpisz swój numer telefonu"> <br>
+         <textarea rows="8" maxlength="200" id="message" name="message" placeholder="Opisz wielkość słoika, typ oraz rośliny i dodatki"></textarea>
+         <button type="submit" class="hero-btn-form">Wyślij wiadomość</button>
+
+    </form>
+    <div id="counter">
+        <script>
+    
+        const messageEle = document.getElementById('message');
+        const counterEle = document.getElementById('counter');
+        
+        messageEle.addEventListener('input', function (e) {
+            const target = e.target;
+        
+            // Get the `maxlength` attribute
+            const maxLength = target.getAttribute('maxlength');
+        
+            // Count the current number of characters
+            const currentLength = target.value.length;
+        
+            counterEle.innerHTML = `${currentLength}/${maxLength}`;
+        });
+        </script>
+    </div>
+</div>
+
+</section>
+    <section class="footer">
+        <ul>
+            <li><a class="fa fa-facebook" href="https://www.facebook.com/szklaanylaas/" target="_blank"></a></li>
+            <li>All rights reserved 2023 &copy;</li>
+            <li><a class="fa fa-instagram" href="https://www.instagram.com/szklany_las_/" target="_blank"></a></li>
+        </ul>
+    </section>
+</body>
+</html>
